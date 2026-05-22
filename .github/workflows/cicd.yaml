@@ -87,8 +87,8 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -auto-approve
 
-      Note this part depends on the manual DNS Route 53 to Namecheap or GoDaddy setup.
-      ===================================================================================
+      # Note this part depends on the manual DNS Route 53 to Namecheap or GoDaddy setup.
+      # ===================================================================================
       - name: 'authenticate to EKS Cluster'
         run: aws eks update-kubeconfig --name ${{ vars.EKS_CLUSTER_NAME }} --region us-east-1
       
