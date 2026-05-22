@@ -58,11 +58,17 @@ jobs:
       - name: 'tfsec Security Scan.'
         run: ./tfsec . || true
 
+      - name: Remove Helm releases from state to avoid dependency cycle
+        run: |
+          terraform state rm 'module.eks-deployment.helm_release.nginx_ingress' || true
+          terraform state rm 'module.eks-deployment.helm_release.cert_manager' || true
+          terraform state rm 'module.eks-deployment.helm_release.argocd' || true
+
       - name: Terraform Plan
         run: terraform plan -refresh=false
 
-      - name: Terraform Apply.
-        run: terraform apply -auto-approve 
+      # - name: Terraform Apply.
+      #   run: terraform apply -auto-approve
 
 
         ## Note this part depends on the mannaul Dns route 53 to namecheap or godaddy setup.
