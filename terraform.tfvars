@@ -17,5 +17,5 @@ repository_name      = "eks-repository"
 email                = "craigfedrick@gmail.com"
 db_instance_class    = "db.t3.micro"
 db_allocated_storage = 20
-
+zone_name           = "iyekdigitalcloud.online"
 
