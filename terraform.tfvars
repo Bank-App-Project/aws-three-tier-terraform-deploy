@@ -11,11 +11,10 @@ capacity_type = "ON_DEMAND"
 ami_type = "AL2_x86_64" 
 label_one = "system-nodepool"
 eks_version = "1.32"
-domain-name = "cloudwitches.online"
+domain-name = "iyekdigitalcloud.online"
 cluster_name = "eks-cluster"
 repository_name = "eks-repository"
-email = "support@digitalwitchng.online"
-domain_name = "cloudwitches.online"
+email = "craigfedrick@gmail.com"
 db_instance_class = "db.t3.micro"
 db_allocated_storage = 20
 

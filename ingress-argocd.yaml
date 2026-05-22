@@ -11,10 +11,11 @@ spec:
   ingressClassName: external-nginx
   tls:
   - hosts:
-    - argocd.cloudwitches.online
-    secretName: argocd-cloudwitches-online
+    - argocd.iyekdigitalcloud.online
+
+    secretName: argocd-iyekdigitalcloud-online
   rules:
-  - host: argocd.cloudwitches.online
+  - host: argocd.iyekdigitalcloud.online
     http:
       paths:
       - path: /
