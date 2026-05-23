@@ -1,4 +1,4 @@
-# Terraform EKS & Database Deployment
+#### Terraform EKS & Database Deployment
 
 This repository contains the infrastructure-as-code (IaC) setup using **Terraform** to deploy a complete AWS environment, including VPC, EKS (Kubernetes), RDS database, and DNS. The deployment is automated using **GitHub Actions**.
 
