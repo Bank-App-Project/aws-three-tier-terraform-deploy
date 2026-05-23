@@ -4,7 +4,7 @@ This repository contains the infrastructure-as-code (IaC) setup using **Terrafor
 
 ---
 ## For DNS correction for both goodday or namecheap whichever one you are using.
-## ===============================================================================
+## =================================================================================
 ### Note: at .github/workflows/cicd.yaml. comment line 70 to 83 before you deploy the infrastructure.
 
 ### step (1) first after deploying this infrastructure to aws everything will be created.
